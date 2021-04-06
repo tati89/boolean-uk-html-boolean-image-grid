@@ -11,9 +11,10 @@ body {
 .container {
     display: grid;
     grid-template: 
-    " nav-bar nav-bar nav-bar" 50px
+    " nav-bar nav-bar nav-bar" 60px
+    ". hero . " auto
     ". cards ." 1fr
-    "footer footer footer" 50px /
+    "footer footer footer" 60px /
     1fr 1fr 1fr;
 }
 
@@ -22,7 +23,12 @@ body {
     grid-area: nav-bar;
     padding: 5px;
     background-color: #001434;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+.hero {
+    grid-area: hero;
+    
 }
 
 .cards {
@@ -42,7 +48,7 @@ body {
     border-radius: 5px;
     position: relative;
 
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 
 .logo-image-top {
@@ -60,18 +66,28 @@ body {
 
 .card-image {
     width: 100%;
+    margin-bottom: 10px;;
     
 }
 
 .github-icon {
-    width: 20px;
-    text-align: right;
-    position: right;
+    margin-left: 110px;;
 }
 
+.github-icon,
 .twitter-icon {
     width: 20px;
     
+} 
+
+p {
+    margin: 15px 10px 15px 6px;
+    text-align: start;
+}
+
+footer h5 {
+    color: white;
+    margin-left: 15px;
 }
 
 footer {
@@ -79,4 +95,5 @@ footer {
     grid-area: footer;
     background-color: #001434;
     margin-top: 10px;
+    align-items: center;
 }
