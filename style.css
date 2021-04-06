@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    " nav-bar nav-bar nav-bar" 50px
+    ". cards ." 1fr
+    "footer footer footer" 50px /
+    1fr 1fr 1fr;
+}
+
+.nav-bar {
+    display: grid;
+    grid-area: nav-bar;
+    padding: 5px;
+    background-color: #001434;
+    margin-bottom: 10px;
+}
+
+.cards {
+    max-width: 900px;
+    display: grid;
+    grid-area: cards;
+    grid-gap: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card-1 {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+
+    border: 1px solid black;
+}
+
+.logo-image-top {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.logo-image{
+    width: 40px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.card-image {
+    width: 100%;
+    
+}
+
+.github-icon {
+    width: 20px;
+    text-align: right;
+    position: right;
+}
+
+.twitter-icon {
+    width: 20px;
+    
+}
+
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: #001434;
+    margin-top: 10px;
+}
