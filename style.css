@@ -49,6 +49,7 @@ body {
     position: relative;
 
     border: 1px solid gray;
+    overflow: hidden;
 }
 
 .logo-image-top {
